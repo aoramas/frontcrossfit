@@ -7,6 +7,7 @@ import { HorariosComponent } from './pages/horarios/horarios.component';
 import { WodsComponent } from './pages/wods/wods.component';
 import { EjerciciosComponent } from './pages/ejercicios/ejercicios.component';
 import { HomeComponent } from './pages/home/home.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HomeComponent } from './pages/home/home.component';
     HorariosComponent,
     WodsComponent,
     EjerciciosComponent,
-    HomeComponent
+    HomeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
