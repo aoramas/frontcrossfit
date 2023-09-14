@@ -15,6 +15,7 @@ import { HorariosComponent } from './pages/horarios/horarios.component';
 import { EditarHorarioComponent } from './pages/horarios/pages/editar-horario/editar-horario.component';
 import { ConsultaHorariosComponent } from './pages/horarios/pages/consulta-horarios/consulta-horarios.component';
 import { WodsComponent } from './pages/wods/wods.component';
+import { ConsultaWodsComponent } from './pages/wods/pages/consulta-wods/consulta-wods.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { WodsComponent } from './pages/wods/wods.component';
     EditarHorarioComponent,
     ConsultaHorariosComponent,
     WodsComponent,
+    ConsultaWodsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

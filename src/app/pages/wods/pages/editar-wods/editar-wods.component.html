@@ -1,23 +1,39 @@
 <div class="horarioTable">
   <div class="headerHorarioTable">
-    <h3>Horarios</h3>
+    <h3>Nuevos Wods</h3>
     <button>+ Nuevo</button>
   </div>
   <div class="inputHorario">
-    <div class="inputHorario--item">
-      <label for="">Hora inicio</label>
-      <input type="time">
+    <div>
+      <div class="inputHorario--item">
+        <label for="">Nombre del WOD</label>
+        <input type="text">
+      </div>
+      <div class="inputHorario--item">
+        <label for="">Fecha</label>
+        <select name="" id="">
+          <option value="">Lunes</option>
+          <option value="">Martes</option>
+          <option value="">Miercoles</option>
+          <option value="">Jueves</option>
+          <option value="">Viernes</option>
+          <option value="">Sabado</option>
+          <option value="">Domingo</option>
+        </select>
+      </div>
     </div>
-    <div class="inputHorario--item">
-      <label for="">Hora fin</label>
-      <input type="time">
+    <div>
+      <div>
+        <label for=""></label>
+        <input type="checkbox" name="" id="">
+      </div>
     </div>
-    <button>Agregar horario</button>
+    <button>Agregar</button>
   </div>
   <div class="tableTitles">
     <p class="items">#</p>
-    <p class="items">Hora Inicio</p>
-    <p class="items">Hora Fin</p>
+    <p class="items">Ejercicio</p>
+    <p class="items">Repetición</p>
   </div>
   <div *ngFor="let horario of horariosDelDia" class="tableItems">
     <p class="items">{{ horario.id }}</p>

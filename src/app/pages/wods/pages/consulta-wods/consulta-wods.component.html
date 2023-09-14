@@ -5,12 +5,14 @@
   </div>
   <div class="tableTitles">
     <p class="items">#</p>
-    <p class="items">DIA</p>
-    <p class="items">ACCIONES</p>
+    <p class="items">Dia</p>
+    <p class="items">Fecha</p>
+    <p class="items">Acciones</p>
   </div>
   <div *ngFor="let horario of horarios" class="tableItems">
     <p class="items">{{ horario.id }}</p>
-    <p class="items">{{ horario.diaSemana }}</p>
+    <p class="items">{{ horario.dia }}</p>
+    <p class="items">{{ horario.fecha }}</p>
     <div class="items itemsSvg">
       <a routerLink="/wods/editar">
         <svg

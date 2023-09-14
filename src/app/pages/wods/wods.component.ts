@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./wods.component.scss'],
 
 })
+
 export class WodsComponent {
   constructor() { }
 

@@ -5,24 +5,17 @@ import { Component } from '@angular/core';
   templateUrl: './consulta-wods.component.html',
   styleUrls: ['../../wods.component.scss']
 })
-export class ConsultarWodsComponent {
+export class ConsultaWodsComponent {
   horarios: any[] = [
-    { id: '1', diaSemana: 'Lunes'},
-    { id: '2', diaSemana: 'Martes'},
-    { id: '3', diaSemana: 'Miercoles'},
-    { id: '4', diaSemana: 'Jueves'},
-    { id: '5', diaSemana: 'Viernes'},
-    { id: '6', diaSemana: 'Sabado'},
-    { id: '7', diaSemana: 'Domingo'},
+    { id: '1', dia: 'Lunes', fecha: '2020-10-12'},
+    { id: '2', dia: 'Martes', fecha: '2020-10-12'},
+    { id: '3', dia: 'Miercoles', fecha: '2020-10-12'},
+    { id: '4', dia: 'Jueves', fecha: '2020-10-12'},
+    { id: '5', dia: 'Viernes', fecha: '2020-10-12'},
+    { id: '6', dia: 'Sabado', fecha: '2020-10-12'},
+    { id: '7', dia: 'Domingo', fecha: '2020-10-12'},
   ];
 
   constructor() { }
 
-  editHorario(horario: any) {
-
-  }
-
-  deleteHorario(horario: any) {
-    console.log('Eliminar horario');
-  }
 }

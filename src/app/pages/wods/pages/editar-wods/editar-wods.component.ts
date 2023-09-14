@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Wod } from './data-source';
 
 @Component({
   selector: 'app-editar-wods',
