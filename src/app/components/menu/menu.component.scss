@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   background: white;
   box-sizing: border-box;
@@ -31,8 +31,8 @@
   display: flex;
   flex-direction: column;
   background-color: #29373d;
-  box-shadow: 15px 5px 10px -3px rgba(0, 0, 0, 0.1),
-    6px 0px 13px -3px rgba(0, 0, 0, 0.3);
+  // box-shadow: 15px 5px 10px -3px rgba(0, 0, 0, 0.1),
+  //   6px 0px 13px -3px rgba(0, 0, 0, 0.3);
 
   /*Estilos del contenedor del logo*/
   .menuTitle {
@@ -45,21 +45,19 @@
 
   /*Estilos del contenedor de los items*/
   .itemsContainer {
-    margin-left: 20px;
+    padding-top: 20px;
+    width: 100%;
 
     /*Estilos de los items*/
     .itemMenu {
       display: flex;
       flex-direction: row;
+      padding-left: 20px;
       width: 100%;
       height: 60px;
       align-items: center;
       gap: 10px;
       cursor: pointer;
-      &:hover {
-        background-color: #1e2b30;
-      }
-
       p {
         margin: 0;
         padding: 0;
@@ -75,6 +73,9 @@
         width: 20px;
       }
     }
+        .itemMenu:hover {
+          background-color: #1e2b30;
+        }
     /*Estilos del item seleccionado*/
     .itemMenu--profile {
       img {

@@ -5,28 +5,37 @@ import { WodsComponent } from './pages/wods/wods.component';
 import { EjerciciosComponent } from './pages/ejercicios/ejercicios.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AtletasComponent } from './pages/atletas/atletas.component';
-
+import { LoginComponent } from './pages/Login/login.component';
 
 const routes: Routes = [
   {
-    path: 'home', component: HomeComponent
+    path: 'login',
+    component: LoginComponent,
   },
   {
-    path: 'horarios', component: HorariosComponent
+    path: 'home',
+    component: HomeComponent,
   },
   {
-    path: 'wods', component: WodsComponent
+    path: 'horarios',
+    component: HorariosComponent,
   },
   {
-    path: 'ejercicios', component: EjerciciosComponent
+    path: 'wods',
+    component: WodsComponent,
   },
   {
-    path: 'atletas', component: AtletasComponent
-  }
+    path: 'ejercicios',
+    component: EjerciciosComponent,
+  },
+  {
+    path: 'atletas',
+    component: AtletasComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
