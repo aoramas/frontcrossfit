@@ -34,6 +34,18 @@ const routes: Routes = [
     path: 'atletas',
     component: AtletasComponent,
   },
+  {
+    path: 'asignar-coach',
+    component: AsignarCoachComponent,
+  },
+  {
+    path: 'coachs',
+    component: CoachsComponent,
+  },
+  {
+    path: '**',
+    redirectTo: 'login',
+  },
 ];
 
 @NgModule({
