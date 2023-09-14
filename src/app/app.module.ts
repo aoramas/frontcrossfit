@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { AtletasComponent } from './pages/atletas/atletas.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    MenuComponent
+    MenuComponent,
+    AtletasComponent
   ],
   imports: [
     BrowserModule,

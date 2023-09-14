@@ -4,6 +4,7 @@ import { HorariosComponent } from './pages/horarios/horarios.component';
 import { WodsComponent } from './pages/wods/wods.component';
 import { EjerciciosComponent } from './pages/ejercicios/ejercicios.component';
 import { HomeComponent } from './pages/home/home.component';
+import { AtletasComponent } from './pages/atletas/atletas.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,9 @@ const routes: Routes = [
   },
   {
     path: 'ejercicios', component: EjerciciosComponent
+  },
+  {
+    path: 'atletas', component: AtletasComponent
   }
 ];
 
