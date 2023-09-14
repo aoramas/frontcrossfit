@@ -6,6 +6,7 @@ import { EjerciciosComponent } from './pages/ejercicios/ejercicios.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AtletasComponent } from './pages/atletas/atletas.component';
 import { LoginComponent } from './pages/Login/login.component';
+import { CoachsComponent } from './pages/coachs/coachs.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'atletas',
     component: AtletasComponent,
+  },
+  {
+    path: 'coachs',
+    component: CoachsComponent,
   },
 ];
 

@@ -9,6 +9,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { AtletasComponent } from './pages/atletas/atletas.component';
 import { LoginComponent } from './pages/Login/login.component';
 import { HomeComponent } from './pages/home/home.component';
+import { CoachsComponent } from './pages/coachs/coachs.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { HomeComponent } from './pages/home/home.component';
     AtletasComponent,
     LoginComponent,
     HomeComponent,
+    CoachsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
