@@ -1,0 +1,31 @@
+<div class="horarioTable">
+  <div class="headerHorarioTable">
+    <h3>Horarios</h3>
+    <button>+ Nuevo</button>
+  </div>
+  <div class="inputHorario">
+    <div class="inputHorario--item">
+      <label for="">Hora inicio</label>
+      <input type="time">
+    </div>
+    <div class="inputHorario--item">
+      <label for="">Hora fin</label>
+      <input type="time">
+    </div>
+    <button>Agregar horario</button>
+  </div>
+  <div class="tableTitles">
+    <p class="items">#</p>
+    <p class="items">Hora Inicio</p>
+    <p class="items">Hora Fin</p>
+  </div>
+  <div *ngFor="let horario of horariosDelDia" class="tableItems">
+    <p class="items">{{ horario.id }}</p>
+    <p class="items">{{ horario.horaInicio }}</p>
+    <p class="items">{{ horario.horaFin }}</p>
+  </div>
+  <div class="buttons">
+    <a href="/horarios">Volver</a>
+    <a>Guardar</a>
+  </div>
+</div>

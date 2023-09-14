@@ -1,0 +1,139 @@
+.horariosComponent {
+  display: flex;
+  flex-direction: row;
+  background-color: #3a4f57;
+}
+
+.horariosContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 90vh;
+  max-height: 90vh;
+  padding: 25px;
+}
+
+
+.inputHorario {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+  gap: 15px;
+  color: white;
+  align-items: center;
+
+  .inputHorario--item {
+    display: flex;
+    flex-direction: column;
+    label {
+      font-size: 15px;
+      font-family: sans-serif;
+    }
+
+    input {
+      border-radius: 15px;
+      padding: 10px;
+    }
+  }
+
+  button {
+    background-color: white;
+    height: 50%;
+    color: black;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border: none;
+    text-align: center;
+    align-self: flex-end;
+  }
+}
+
+
+.horarioTable {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  border: 2px solid #2a393f;
+  border-radius: 20px;
+  padding: 25px;
+  position: relative;
+  gap: 10px;
+
+  .headerHorarioTable {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+      color: white;
+      font-size: 30px;
+      font-family: sans-serif;
+    }
+    button {
+      background-color: white;
+      color: black;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      padding: 15px;
+      border: none;
+      text-align: center;
+    }
+    button:hover {
+      background-color: rgb(133, 133, 133);
+    }
+  }
+
+  .tableTitles,
+  .tableItems {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+    color: #ffffff;
+    .items {
+      width: 100px;
+      height: 25px;
+    }
+    .itemsSvg {
+      display: flex;
+      justify-content: space-evenly;
+      svg {
+        fill: #ffffff;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .tableTitles {
+    align-items: center;
+    background-color: #2a393f;
+    border-radius: 15px;
+    height: 50px;
+  }
+
+  .buttons{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    gap: 10px;
+    font-family: sans-serif;
+    a {
+      padding: 15px 20px;
+      height: auto;
+      border-radius: 10px;
+      border: none;
+      background-color: white;
+      font-weight: bold;
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
