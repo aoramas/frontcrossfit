@@ -10,6 +10,7 @@ import { AtletasComponent } from './pages/atletas/atletas.component';
 import { LoginComponent } from './pages/Login/login.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AsignarCoachComponent } from './pages/asignar-coach/asignar-coach.component';
+import { CoachsComponent } from './pages/coachs/coachs.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { AsignarCoachComponent } from './pages/asignar-coach/asignar-coach.compo
     LoginComponent,
     HomeComponent,
     AsignarCoachComponent,
+    CoachsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
