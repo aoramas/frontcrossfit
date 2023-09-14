@@ -6,6 +6,7 @@ import { EjerciciosComponent } from './pages/ejercicios/ejercicios.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AtletasComponent } from './pages/atletas/atletas.component';
 import { LoginComponent } from './pages/Login/login.component';
+import { AsignarCoachComponent } from './pages/asignar-coach/asignar-coach.component';
 import { CoachsComponent } from './pages/coachs/coachs.component';
 import { EditarHorarioComponent } from './pages/horarios/pages/editar-horario/editar-horario.component'
 import { ConsultaHorariosComponent } from './pages/horarios/pages/consulta-horarios/consulta-horarios.component';
@@ -59,8 +60,16 @@ const routes: Routes = [
     component: AtletasComponent,
   },
   {
+    path: 'asignar-coach',
+    component: AsignarCoachComponent,
+  },
+  {
     path: 'coachs',
     component: CoachsComponent,
+  },
+  {
+    path: '**',
+    redirectTo: 'login',
   },
 ];
 

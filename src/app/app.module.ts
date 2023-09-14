@@ -9,6 +9,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { AtletasComponent } from './pages/atletas/atletas.component';
 import { LoginComponent } from './pages/Login/login.component';
 import { HomeComponent } from './pages/home/home.component';
+import { AsignarCoachComponent } from './pages/asignar-coach/asignar-coach.component';
 import { CoachsComponent } from './pages/coachs/coachs.component';
 import { HorariosComponent } from './pages/horarios/horarios.component';
 import { EditarHorarioComponent } from './pages/horarios/pages/editar-horario/editar-horario.component';
@@ -23,6 +24,7 @@ import { WodsComponent } from './pages/wods/wods.component';
     AtletasComponent,
     LoginComponent,
     HomeComponent,
+    AsignarCoachComponent,
     CoachsComponent,
     HorariosComponent,
     EditarHorarioComponent,
