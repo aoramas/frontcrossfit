@@ -6,8 +6,20 @@
   display: flex;
   flex-direction: column;
   background-color: #29373d;
-  // box-shadow: 15px 5px 10px -3px rgba(0, 0, 0, 0.1),
-  //   6px 0px 13px -3px rgba(0, 0, 0, 0.3);
+
+  .user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .profilePic{
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      border-radius: 50%;
+    }
+
+  }
 
   /*Estilos del contenedor del logo*/
   .menuTitle {
