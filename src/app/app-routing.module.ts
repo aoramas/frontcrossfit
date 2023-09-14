@@ -8,6 +8,11 @@ import { AtletasComponent } from './pages/atletas/atletas.component';
 import { LoginComponent } from './pages/Login/login.component';
 import { AsignarCoachComponent } from './pages/asignar-coach/asignar-coach.component';
 import { CoachsComponent } from './pages/coachs/coachs.component';
+import { EditarHorarioComponent } from './pages/horarios/pages/editar-horario/editar-horario.component'
+import { ConsultaHorariosComponent } from './pages/horarios/pages/consulta-horarios/consulta-horarios.component';
+import { ConsultarWodsComponent } from './pages/wods/pages/consulta-wods/consulta-wods.component';
+import { EditarWodsComponent } from './pages/wods/pages/editar-wods/editar-wods.component';
+
 
 const routes: Routes = [
   {
@@ -21,10 +26,30 @@ const routes: Routes = [
   {
     path: 'horarios',
     component: HorariosComponent,
+    children: [
+      {
+        path: '',
+        component: ConsultaHorariosComponent,
+      },
+      {
+        path: 'editar',
+        component: EditarHorarioComponent,
+      },
+    ],
   },
   {
     path: 'wods',
     component: WodsComponent,
+    children: [
+      {
+        path: '',
+        component: ConsultarWodsComponent,
+      },
+      {
+        path: 'editar',
+        component: EditarWodsComponent,
+      }
+    ],
   },
   {
     path: 'ejercicios',
