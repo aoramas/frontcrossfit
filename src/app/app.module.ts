@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http'; // Importa el módulo HttpClientModule
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,9 +18,14 @@ import { ConsultaHorariosComponent } from './pages/horarios/pages/consulta-horar
 import { WodsComponent } from './pages/wods/wods.component';
 import { ConsultaWodsComponent } from './pages/wods/pages/consulta-wods/consulta-wods.component';
 import { EditarWodsComponent } from './pages/wods/pages/editar-wods/editar-wods.component';
-
 import { FormsModule } from '@angular/forms';
+<<<<<<< HEAD
 import { FloatingTabComponent } from './pages/atletas/floating-tab/floating-tab.component';
+=======
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+import { DataService } from './shared/data/data.service';
+>>>>>>> 56c54cc405000685e137f82ff43b0c236e6a8030
 
 @NgModule({
   declarations: [
@@ -39,8 +45,19 @@ import { FloatingTabComponent } from './pages/atletas/floating-tab/floating-tab.
     EditarWodsComponent,
     FloatingTabComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
-  providers: [],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot({
+      timeOut: 10000,
+      positionClass: 'toast-top-right',
+      preventDuplicates: true,
+    }),
+  ],
+  providers: [DataService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

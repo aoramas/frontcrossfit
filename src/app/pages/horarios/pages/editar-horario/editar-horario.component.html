@@ -1,16 +1,17 @@
 <div class="horarioTable">
   <div class="headerHorarioTable">
-    <h3>Horarios</h3>
+    <h3>Horario del {{ diaSemana }}</h3>
     <button>+ Nuevo</button>
   </div>
+
   <div class="inputHorario">
     <div class="inputHorario--item">
       <label for="">Hora inicio</label>
-      <input type="time" id="horaInicio" [(ngModel)]="horaInicio">
+      <input type="time" id="horaInicio" [(ngModel)]="horaInicio" />
     </div>
     <div class="inputHorario--item">
       <label for="">Hora fin</label>
-      <input type="time" id="horaInicio" [(ngModel)]="horaFin" >
+      <input type="time" id="horaInicio" [(ngModel)]="horaFin" />
     </div>
     <button (click)="addHorario(horaInicio, horaFin)">Agregar horario</button>
   </div>
@@ -20,7 +21,7 @@
     <p class="items">Hora Fin</p>
   </div>
   <div *ngFor="let horario of horariosDelDia" class="tableItems">
-    <p class="items">{{ horario.id }}</p>
+    <p class="items">{{ horariosDelDia.indexOf(horario) + 1 }}</p>
     <p class="items">{{ horario.horaInicio }}</p>
     <p class="items">{{ horario.horaFin }}</p>
   </div>
