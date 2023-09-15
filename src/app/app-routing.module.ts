@@ -13,6 +13,7 @@ import { ConsultaHorariosComponent } from './pages/horarios/pages/consulta-horar
 import { ConsultaWodsComponent } from './pages/wods/pages/consulta-wods/consulta-wods.component';
 import { EditarWodsComponent } from './pages/wods/pages/editar-wods/editar-wods.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FloatingTabComponent } from './pages/atletas/floating-tab/floating-tab.component';
 
 const routes: Routes = [
   {
@@ -64,6 +65,10 @@ const routes: Routes = [
   {
     path: 'atletas',
     component: AtletasComponent,
+  },
+  {
+    path: 'floating-tab',
+    component: FloatingTabComponent,
   },
   {
     path: 'asignar-coach',
