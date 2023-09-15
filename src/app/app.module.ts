@@ -21,6 +21,7 @@ import { EditarWodsComponent } from './pages/wods/pages/editar-wods/editar-wods.
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { DataService } from './shared/data/data.service';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,8 @@ import { ToastrModule } from 'ngx-toastr';
     }),
   ],
   providers: [],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  providers: [DataService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
