@@ -10,13 +10,14 @@
     <div class="atletasContainer">
       <div class="adminAndButtom">
         <h1>Atletas</h1>
-        <button onclick="">Nuevo</button>
+        <button class="btnBuscar" (click)="toggleFloatingWindow()">Buscar</button>
+        <app-floating-tab (CloseFloatingWindow)="handleFloatingWindowClose()" *ngIf="showFloatingWindow"></app-floating-tab>
       </div>
       <div class="Search">
         <input type="text" placeholder="Buscar" />
       </div>
       <div class="tableName">
-        <table cols="5" rows="9">
+        <table>
           <tr>
             <td>#</td>
             <td>Nombres</td>
@@ -24,89 +25,14 @@
             <td>Cedula</td>
             <td>Acciones</td>
           </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+          <tr *ngFor="let atleta of atletas; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ atleta.nombres }}</td>
+            <td>{{ atleta.fecha }}</td>
+            <td>{{ atleta.identificacion }}</td>
+            <td><!-- Acciones --></td>
           </tr>
         </table>
       </div>
-      <div class="pages">
-        <a href=""> Anterior </a>
-        <a href=""> 1 </a>
-        <a href=""> 2 </a>
-        <a href=""> 3 </a>
-        <a href=""> 4 </a>
-        <a href=""> 5 </a>
-        <a href=""> 6 </a>
-        <a href=""> 7 </a>
-        <a href=""> 8 </a>
-        <a href=""> 9 </a>
-        <a href=""> 10 </a>
-        <a href=""> Anterior </a>
-      </div>
-    </div>
-    <div class="floatingwWindow">
-      <div class="titleAndButton">
-        <div class="tittleAtleta">
-          <h1>Nuevo atleta</h1>
-        </div>
-        <div class="cerrar">
-          <p>x</p>
-        </div>
-      </div>
-      <div class="firstFields">
-        <label class="nombre-completo">Nombre completo</label>
-        <label class="fecha">Fecha</label>
-        <input type="text" class="input-nombre-completo" />
-        <input type="date" class="input-fecha" />
-      </div>
-      <div class="secondFields">
-        <label class="ident">Identificacion</label>
-        <input type="text" class="input-ident" />
-      </div>
-      <div class="threeFields">
-        <label class="correo">Correo Electronico</label>
-        <input type="text" class="input-correo" />
-      </div>
-      <div class="fourFields">
-        <label>Password</label>
-        <input type="text" class="input-password" />
-      </div>
-      <div class="fiveFields">
-        <button class="guardarEstudiante">Guardar</button>
-
-      </div>
-    </div>
   </div>
 </div>

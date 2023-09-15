@@ -1,0 +1,31 @@
+<div class="floatingWindow">
+  <div class="titleAndButton">
+    <div class="tittleAtleta">
+      <h1>Nuevo atleta</h1>
+    </div>
+    <div class="cerrar">
+      <button class="buttonX" (click)="closeWindow()">x</button>
+    </div>
+  </div>
+  <div class="firstFields">
+    <label class="nombre-completo">Nombre completo</label>
+    <label class="fecha">Fecha</label>
+    <input type="text" class="input-nombre-completo" />
+    <input type="date" class="input-fecha" />
+  </div>
+  <div class="secondFields">
+    <label class="ident">Identificacion</label>
+    <input type="text" class="input-ident" />
+  </div>
+  <div class="threeFields">
+    <label class="correo">Correo Electronico</label>
+    <input type="text" class="input-correo" />
+  </div>
+  <div class="fourFields">
+    <label>Password</label>
+    <input type="text" class="input-password" />
+  </div>
+  <div class="fiveFields">
+    <button class="guardarEstudiante" (click)="saveAtleta()">Guardar</button>
+  </div>
+</div>

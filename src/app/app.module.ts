@@ -19,6 +19,7 @@ import { ConsultaWodsComponent } from './pages/wods/pages/consulta-wods/consulta
 import { EditarWodsComponent } from './pages/wods/pages/editar-wods/editar-wods.component';
 
 import { FormsModule } from '@angular/forms';
+import { FloatingTabComponent } from './pages/atletas/floating-tab/floating-tab.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { FormsModule } from '@angular/forms';
     WodsComponent,
     ConsultaWodsComponent,
     EditarWodsComponent,
+    FloatingTabComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

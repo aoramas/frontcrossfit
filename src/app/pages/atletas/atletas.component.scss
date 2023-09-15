@@ -50,16 +50,19 @@
         font-size: 25px;
         color: white;
       }
-      button{
+      .btnBuscar{
+        border: none;
         margin-left: 500px;
         width: 150px;
         height: 40px;
         border-radius: 10px;
-        border: 1px solid white;
         background-color: black;
         color: white;
         font-size: 15px;
         cursor: pointer;
+      }
+      .btnBuscar:hover{
+        background-color: #ccc;
       }
     }
     .Search{
@@ -114,107 +117,6 @@
         margin-left: 20px;
       }
     }
-  }
-}
-.floatingwWindow{
-  position: fixed;
-  border-radius: 15px;
-  margin-left: 115px;
-  padding: 30px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 600px;
-  height: 500px;
-  background-color: lightgray;
-  .titleAndButton{
-    display: flex;
-    flex-direction: row;
-    border: 1px solid white;
-    .tittleAtleta{
-      font-size: 20px;
-      border: 1px solid white;
-    }
-    .cerrar{
-      display: flex;
-      justify-content: center;
-      margin-left: 297px;
-      font-size: 20px;
-      align-items: end;
-      width: 25px;
-      height: 25px;
-      border: 1px solid white;
-    }
-  }
-  .firstFields{
-    display: grid;
-    margin-top: 20px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-  .nombre-completo {
-    grid-column: 1;
-    grid-row: 1;
-  }
-  .fecha {
-    grid-column: 2;
-    grid-row: 1;
-  }
-  .input-nombre-completo {
-    width: 200px;
-    height: 35px;
-    border-radius: 5px;
-    grid-column: 1;
-    grid-row: 2;
-  }
-  .input-fecha {
-    width: 200px;
-    height: 35px;
-    border-radius: 5px;
-    grid-column: 2;
-    grid-row: 2;
-  }
-  .secondFields{
-    display: grid;
-    margin-top: 20px;
-  }
-  .input-ident{
-    border-radius: 5px;
-    width:200px;
-    height:35px;
-  }
-  .threeFields{
-    display: grid;
-    margin-top: 20px;
-  }
-  .input-correo{
-    border-radius: 5px;
-    width:200px;
-    height:35px;
-  }
-  .fourFields{
-    display: grid;
-    margin-top: 20px;
-  }
-  .input-password{
-    border-radius: 5px;
-    width:200px;
-    height:35px;
-  }
-  .fiveFields{
-    display: grid;
-    margin-top: 20px;
-  }
-  .guardarEstudiante{
-    display: flex;
-    justify-content: center;
-    border-radius: 5px;
-    margin-left: 297px;
-    font-size: 20px;
-    align-items: end;
-    width: 250px;
-    height: 25px;
-    border: 1px solid white;
   }
 }
 
