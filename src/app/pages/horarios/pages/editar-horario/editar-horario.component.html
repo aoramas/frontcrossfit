@@ -21,7 +21,7 @@
     <p class="items">Hora Fin</p>
   </div>
   <div *ngFor="let horario of horariosDelDia" class="tableItems">
-    <p class="items">{{ horario.id }}</p>
+    <p class="items">{{ horariosDelDia.indexOf(horario) + 1 }}</p>
     <p class="items">{{ horario.horaInicio }}</p>
     <p class="items">{{ horario.horaFin }}</p>
   </div>

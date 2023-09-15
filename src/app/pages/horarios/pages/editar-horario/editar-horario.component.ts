@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient} from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Horario } from '../../../../modules/Horario.module'; // Asegúrate de importar la clase o interfaz Horario adecuada
 import { DataService } from 'src/app/shared/data/data.service';
 
@@ -40,7 +40,7 @@ export class EditarHorarioComponent implements OnInit {
     console.log('Agregando horario', horaInicio, horaFin);
     this.http
       .post<Horario>('http://localhost:3001/api/v1/horario', {
-        diaSemana: 'Martes',
+        diaSemana: this.diaSemana,
         horaInicio: horaInicio,
         horaFin: horaFin,
         estado: true,

@@ -7,14 +7,17 @@ import { User } from '../interfaces/user';
   providedIn: 'root',
 })
 export class UserService {
-    private myAppUrl:string;
-    private myApiUrl:string;
-    constructor(private http: HttpClient) {
-        this.myAppUrl = "https://localhost:300/api/v2";
-        this.myApiUrl = "/users";
-    }
+  private myAppUrl: string;
+  private myApiUrl: string;
+  constructor(private http: HttpClient) {
+    this.myAppUrl = 'https://localhost:3001/api/v1';
+    this.myApiUrl = '/users';
+  }
 
-    logIn(user: User):Observable<string>{
-        return this.http.post<string>(`${this.myAppUrl}${this.myApiUrl}/login`, user);
-    }
+  logIn(user: User): Observable<string> {
+    return this.http.post<string>(
+      `${this.myAppUrl}${this.myApiUrl}/login`,
+      user
+    );
+  }
 }

@@ -52,8 +52,6 @@ import { DataService } from './shared/data/data.service';
       preventDuplicates: true,
     }),
   ],
-  providers: [],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [DataService],
   bootstrap: [AppComponent],
 })
