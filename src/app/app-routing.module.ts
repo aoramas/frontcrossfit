@@ -12,6 +12,7 @@ import { EditarHorarioComponent } from './pages/horarios/pages/editar-horario/ed
 import { ConsultaHorariosComponent } from './pages/horarios/pages/consulta-horarios/consulta-horarios.component';
 import { ConsultaWodsComponent } from './pages/wods/pages/consulta-wods/consulta-wods.component';
 import { EditarWodsComponent } from './pages/wods/pages/editar-wods/editar-wods.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
   {
@@ -73,7 +74,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes), HttpClientModule],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
