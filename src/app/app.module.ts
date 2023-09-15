@@ -19,6 +19,7 @@ import { ConsultaWodsComponent } from './pages/wods/pages/consulta-wods/consulta
 import { EditarWodsComponent } from './pages/wods/pages/editar-wods/editar-wods.component';
 
 import { FormsModule } from '@angular/forms';
+import { DataService } from './shared/data/data.service';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,7 @@ import { FormsModule } from '@angular/forms';
     EditarWodsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

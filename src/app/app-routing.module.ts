@@ -8,12 +8,11 @@ import { AtletasComponent } from './pages/atletas/atletas.component';
 import { LoginComponent } from './pages/Login/login.component';
 import { AsignarCoachComponent } from './pages/asignar-coach/asignar-coach.component';
 import { CoachsComponent } from './pages/coachs/coachs.component';
-import { EditarHorarioComponent } from './pages/horarios/pages/editar-horario/editar-horario.component'
+import { EditarHorarioComponent } from './pages/horarios/pages/editar-horario/editar-horario.component';
 import { ConsultaHorariosComponent } from './pages/horarios/pages/consulta-horarios/consulta-horarios.component';
 import { ConsultaWodsComponent } from './pages/wods/pages/consulta-wods/consulta-wods.component';
 import { EditarWodsComponent } from './pages/wods/pages/editar-wods/editar-wods.component';
 import { HttpClientModule } from '@angular/common/http';
-
 
 const routes: Routes = [
   {
@@ -35,6 +34,12 @@ const routes: Routes = [
       {
         path: 'editar',
         component: EditarHorarioComponent,
+        children: [
+          {
+            path: ':diaSemana',
+            component: EditarHorarioComponent,
+          },
+        ],
       },
     ],
   },
@@ -49,7 +54,7 @@ const routes: Routes = [
       {
         path: 'editar',
         component: EditarWodsComponent,
-      }
+      },
     ],
   },
   {
@@ -67,10 +72,6 @@ const routes: Routes = [
   {
     path: 'coachs',
     component: CoachsComponent,
-  },
-  {
-    path: '**',
-    redirectTo: 'login',
   },
 ];
 
