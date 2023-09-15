@@ -1,23 +1,26 @@
-import { Component } from '@angular/core';
-import { Horario } from './data-source';
+import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Horario } from '../../../../modules/Horario.module'; // Asegúrate de importar la clase o interfaz Horario adecuada
 
 @Component({
   selector: 'app-editar-horario',
   templateUrl: './editar-horario.component.html',
   styleUrls: ['../../horarios.component.scss']
 })
-export class EditarHorarioComponent {
+export class EditarHorarioComponent implements OnInit {
+  horariosDelDia: Horario[] = [];
 
-  horariosDelDia: any[] = [
-    { id: '1', horaInicio: '9:00', horaFin: '10:00'},
-    { id: '2', horaInicio: '10:00', horaFin: '11:00'},
-    { id: '3', horaInicio: '11:00', horaFin: '12:00'},
-    { id: '4', horaInicio: '12:00', horaFin: '13:00'},
-    { id: '5', horaInicio: '13:00', horaFin: '14:00'},
-  ];
+  constructor(private http: HttpClient) { }
 
-  constructor(
-
-  ){ }
-
+  ngOnInit(): void {
+    // Realiza una solicitud HTTP GET a la API para obtener los datos
+    this.http.get<Horario[]>('http://localhost:3000/api/v1/horario').subscribe(
+      (data: Horario[]) => {
+        this.horariosDelDia = data; // Asigna los datos de la API a la propiedad horariosDelDia
+      },
+      (error) => {
+        console.error('Error al obtener los datos de la API', error);
+      }
+    );
+  }
 }

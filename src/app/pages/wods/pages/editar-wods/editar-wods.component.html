@@ -7,10 +7,16 @@
     <div>
       <div class="inputHorario--item">
         <label for="">Nombre del WOD</label>
-        <input type="text">
+        <input type="text" placeholder="Wod" />
       </div>
       <div class="inputHorario--item">
         <label for="">Fecha</label>
+        <input type="date" />
+      </div>
+    </div>
+    <div>
+      <div class="inputHorario--item">
+        <label for="">Ejercicios</label>
         <select name="" id="">
           <option value="">Lunes</option>
           <option value="">Martes</option>
@@ -21,11 +27,14 @@
           <option value="">Domingo</option>
         </select>
       </div>
+      <div class="inputHorario--item">
+        <label for="">Repeticiones</label>
+        <input type="text" placeholder="#"/>
+      </div>
     </div>
     <div>
       <div>
         <label for=""></label>
-        <input type="checkbox" name="" id="">
       </div>
     </div>
     <button>Agregar</button>
@@ -35,10 +44,10 @@
     <p class="items">Ejercicio</p>
     <p class="items">Repetición</p>
   </div>
-  <div *ngFor="let horario of horariosDelDia" class="tableItems">
-    <p class="items">{{ horario.id }}</p>
-    <p class="items">{{ horario.horaInicio }}</p>
-    <p class="items">{{ horario.horaFin }}</p>
+  <div *ngFor="let wod of Wods" class="tableItems">
+    <p class="items">{{ wod.id }}</p>
+    <p class="items">{{ wod.ejercicio }}</p>
+    <p class="items">{{ wod.repeticion }}</p>
   </div>
   <div class="buttons">
     <a href="/wods">Volver</a>

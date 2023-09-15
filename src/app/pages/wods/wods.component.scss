@@ -19,21 +19,33 @@
   flex-direction: row;
   width: 100%;
   justify-content: flex-end;
-  gap: 15px;
+  gap: 40px;
   color: white;
   align-items: center;
 
   .inputHorario--item {
     display: flex;
     flex-direction: column;
+    margin-bottom: 15px;
+
     label {
+      margin-bottom: 5px;
       font-size: 15px;
       font-family: sans-serif;
+      border: none;
+    }
+
+    select{
+      border-radius: 15px;
+      padding: 10px;
+      border: none;
+
     }
 
     input {
       border-radius: 15px;
       padding: 10px;
+      border: none;
     }
   }
 
