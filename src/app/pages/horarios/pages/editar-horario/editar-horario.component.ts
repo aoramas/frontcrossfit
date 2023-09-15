@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient} from '@angular/common/http';
 import { Horario } from '../../../../modules/Horario.module'; // Asegúrate de importar la clase o interfaz Horario adecuada
 
 @Component({
@@ -21,7 +21,7 @@ export class EditarHorarioComponent implements OnInit {
   }
 
   getHorarios() {
-    this.http.get<Horario[]>('http://localhost:3000/api/v1/horario').subscribe(
+    this.http.get<Horario[]>('http://localhost:3000/api/v2/horarios').subscribe(
       (data: Horario[]) => {
         this.horariosDelDia = data;
       },
@@ -33,7 +33,7 @@ export class EditarHorarioComponent implements OnInit {
 
   addHorario(horaInicio: string, horaFin: string) {
     console.log('Agregando horario', horaInicio, horaFin);
-    this.http.post<Horario>('http://localhost:3000/api/v1/horario', {
+    this.http.post<Horario>('http://localhost:3000/api/v2/horarios', {
       diaSemana: 'Lunes',
       horaInicio: horaInicio,
       horaFin: horaFin,

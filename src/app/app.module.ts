@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http'; // Importa el módulo HttpClientModule
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,8 +18,9 @@ import { ConsultaHorariosComponent } from './pages/horarios/pages/consulta-horar
 import { WodsComponent } from './pages/wods/wods.component';
 import { ConsultaWodsComponent } from './pages/wods/pages/consulta-wods/consulta-wods.component';
 import { EditarWodsComponent } from './pages/wods/pages/editar-wods/editar-wods.component';
-
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,18 @@ import { FormsModule } from '@angular/forms';
     ConsultaWodsComponent,
     EditarWodsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot({
+      timeOut: 10000,
+      positionClass: 'toast-top-right',
+      preventDuplicates: true,
+    }),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
