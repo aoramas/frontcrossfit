@@ -18,6 +18,8 @@ import { WodsComponent } from './pages/wods/wods.component';
 import { ConsultaWodsComponent } from './pages/wods/pages/consulta-wods/consulta-wods.component';
 import { EditarWodsComponent } from './pages/wods/pages/editar-wods/editar-wods.component';
 
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +37,7 @@ import { EditarWodsComponent } from './pages/wods/pages/editar-wods/editar-wods.
     ConsultaWodsComponent,
     EditarWodsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

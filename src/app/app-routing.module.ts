@@ -14,6 +14,7 @@ import { ConsultaWodsComponent } from './pages/wods/pages/consulta-wods/consulta
 import { EditarWodsComponent } from './pages/wods/pages/editar-wods/editar-wods.component';
 import { HttpClientModule } from '@angular/common/http';
 
+
 const routes: Routes = [
   {
     path: 'login',
