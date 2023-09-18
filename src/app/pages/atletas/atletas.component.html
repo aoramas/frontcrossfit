@@ -11,7 +11,7 @@
       <div class="adminAndButtom">
         <h1>Atletas</h1>
         <button class="btnBuscar" (click)="toggleFloatingWindow()">Buscar</button>
-        <app-floating-tab (CloseFloatingWindow)="handleFloatingWindowClose()" *ngIf="showFloatingWindow"></app-floating-tab>
+        <app-floating-tab (CloseFloatingWindow)="handleFloatingWindowClose()" (SaveAtleta)="handleSaveAtleta($event)" *ngIf="showFloatingWindow"></app-floating-tab>
       </div>
       <div class="Search">
         <input type="text" placeholder="Buscar" />

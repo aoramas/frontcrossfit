@@ -8,24 +8,25 @@
     </div>
   </div>
   <div class="firstFields">
-    <label class="nombre-completo">Nombre completo</label>
-    <label class="fecha">Fecha</label>
-    <input type="text" class="input-nombre-completo" />
-    <input type="date" class="input-fecha" />
+    <label class="nombres">Nombres</label>
+    <label class="apellidos">Apellidos</label>
+    <input type="text" class="input-nombres" [(ngModel)]="atleta.nombres" />
+    <input type="text" class="input-apellidos" [(ngModel)]="atleta.apellidos" />
   </div>
   <div class="secondFields">
     <label class="ident">Identificacion</label>
-    <input type="text" class="input-ident" />
+    <label class="fecha">Fecha</label>
+    <input type="text" class="input-ident" [(ngModel)]="atleta.identificacion" />
+    <input type="date" class="input-fecha" [(ngModel)]="atleta.fecha" />
   </div>
   <div class="threeFields">
     <label class="correo">Correo Electronico</label>
-    <input type="text" class="input-correo" />
+    <input type="text" class="input-correo" [(ngModel)]="atleta.correoElectronico" />
   </div>
   <div class="fourFields">
     <label>Password</label>
-    <input type="text" class="input-password" />
+    <input type="password" class="input-password" [(ngModel)]="atleta.password" />
   </div>
   <div class="fiveFields">
     <button class="guardarEstudiante" (click)="saveAtleta()">Guardar</button>
   </div>
-</div>
