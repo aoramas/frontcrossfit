@@ -10,11 +10,11 @@ export class UserService {
   private myAppUrl: string;
   private myApiUrl: string;
   constructor(private http: HttpClient) {
-    this.myAppUrl = 'https://localhost:3001/api/v1';
-    this.myApiUrl = '/users';
+    this.myAppUrl = 'http://localhost:3000/api/v2';
+    this.myApiUrl = '/user';
   }
 
-  logIn(user: User): Observable<string> {
+  logIn(user: User):Observable<string> {
     return this.http.post<string>(
       `${this.myAppUrl}${this.myApiUrl}/login`,
       user

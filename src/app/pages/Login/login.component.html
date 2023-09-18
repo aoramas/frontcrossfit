@@ -1,15 +1,15 @@
 <div class="bodyLogin">
-  <form action="" class="formLogin">
+  <div action="" class="formLogin">
     <div class="profilePic"></div>
-    <label for=""  class="label labelUsername">username</label>
-    <input type="text" [(ngModel)]="username" class="inputText" placeholder="email" />
-    <label for="" class="label labelPassword">Password</label>
-    <input type="password" [(ngModel)]="password" class="inputText" placeholder="password" />
+    <label for="username"  class="label labelUsername">username</label>
+    <input type="text" [(ngModel)]="username" class="inputText" placeholder="email" id="username"/>
+    <label for="password" class="label labelPassword">Password</label>
+    <input type="password" [(ngModel)]="password" class="inputText" placeholder="password" id="password"/>
     <div class="rememberMe-container">
-      <input type="checkbox" name="" id="" />
-      <label for="" class="label labelRememberMe">Remember me</label>
+      <input type="checkbox" name="" id="checkboxRememberMe" />
+      <label for="checkboxRememberMe" class="label labelRememberMe">Remember me</label>
     </div>
     <button type="submit" class="btnLogin" (click)="logIn()">Login</button>
     <a href="#" class="forgotPassword">Forgot your password?</a>
-  </form>
+  </div>
 </div>
