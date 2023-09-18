@@ -44,15 +44,16 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
-  .nombre-completo {
+  .nombres {
     grid-column: 1;
     grid-row: 1;
+
   }
-  .fecha {
+  .apellidos {
     grid-column: 2;
     grid-row: 1;
   }
-  .input-nombre-completo {
+  .input-nombres {
     width: 200px;
     height: 35px;
     border-radius: 5px;
@@ -60,7 +61,7 @@
     grid-column: 1;
     grid-row: 2;
   }
-  .input-fecha {
+  .input-apellidos {
     border: none;
     width: 200px;
     height: 35px;
@@ -71,6 +72,17 @@
   .secondFields{
     display: grid;
     margin-top: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .input-fecha{
+    border: none;
+    width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    grid-column: 2;
+    grid-row: 2;
+
   }
   .input-ident{
     border: none;
@@ -99,16 +111,16 @@
     height:35px;
   }
   .fiveFields{
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     margin-top: 20px;
   }
   .guardarEstudiante{
     display: flex;
     justify-content: center;
     border-radius: 5px;
-    margin-left: 297px;
     font-size: 20px;
-    align-items: end;
     width: 250px;
     height: 25px;
   }

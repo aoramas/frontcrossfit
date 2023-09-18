@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Output,} from '@angular/core';
 import { Atleta } from '../atleta.model';
 
 
@@ -14,6 +14,7 @@ export class FloatingTabComponent {
     // Propiedades para los datos del atleta
     atleta: Atleta = {
       nombres: '',
+      apellidos: '',
       fecha: new Date(),
       identificacion: '',
       correoElectronico: '',
